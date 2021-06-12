@@ -10,7 +10,7 @@
           >
             <v-list>
               <v-list-item
-                v-for="item in menuItems"
+                v-for="item in mobileMenuItems"
                 :key="item.title"
                 :to="item.path"
               >
@@ -141,6 +141,32 @@ export default {
     return {
       sidebar: false,
       siteLogo: Logo,
+      mobileMenuItems:[
+        {
+          title: "home",
+          path: "/",
+        },
+        {
+          title: "about us",
+          path: "about-us",
+        },
+        {
+          title: "products",
+          path: "products",
+        },
+        {
+          title: "contact us",
+          path: "contact-us",
+        },
+         {
+          title: "login",
+          path: "login",
+        },
+        {
+          title: "register",
+          path: "register",
+        },
+      ],
       menuItems: [
         {
           title: "home",
